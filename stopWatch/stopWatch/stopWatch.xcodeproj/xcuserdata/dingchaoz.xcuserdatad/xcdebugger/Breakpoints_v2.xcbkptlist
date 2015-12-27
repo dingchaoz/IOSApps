@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "stopWatch/ViewController.swift"
+            timestampString = "472751644.222961"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "stopWatch.ViewController.init (stopWatch.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; stopWatch.ViewController"
+                  moduleName = "stopWatch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dingchaoz/Documents/IOS_Apps/stopWatch/stopWatch/stopWatch/ViewController.swift"
+                  timestampString = "472751651.077036"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "stopWatch.ViewController.init (stopWatch.ViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;stopWatch.ViewController&gt;"
+                  moduleName = "stopWatch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dingchaoz/Documents/IOS_Apps/stopWatch/stopWatch/stopWatch/ViewController.swift"
+                  timestampString = "472751651.077129"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
