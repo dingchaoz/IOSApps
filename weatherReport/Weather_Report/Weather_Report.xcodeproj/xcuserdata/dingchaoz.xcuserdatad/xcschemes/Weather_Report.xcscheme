@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "72CD7E9B1C31E7C30075C63C"
+               BlueprintIdentifier = "72AECA8F1C35ADD400FA5186"
                BuildableName = "Weather_Report.app"
                BlueprintName = "Weather_Report"
                ReferencedContainer = "container:Weather_Report.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "72CD7EAF1C31E7C30075C63C"
+               BlueprintIdentifier = "72AECAA31C35ADD400FA5186"
                BuildableName = "Weather_ReportTests.xctest"
                BlueprintName = "Weather_ReportTests"
                ReferencedContainer = "container:Weather_Report.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "72CD7EBA1C31E7C30075C63C"
+               BlueprintIdentifier = "72AECAAE1C35ADD400FA5186"
                BuildableName = "Weather_ReportUITests.xctest"
                BlueprintName = "Weather_ReportUITests"
                ReferencedContainer = "container:Weather_Report.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "72CD7E9B1C31E7C30075C63C"
+            BlueprintIdentifier = "72AECA8F1C35ADD400FA5186"
             BuildableName = "Weather_Report.app"
             BlueprintName = "Weather_Report"
             ReferencedContainer = "container:Weather_Report.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "72CD7E9B1C31E7C30075C63C"
+            BlueprintIdentifier = "72AECA8F1C35ADD400FA5186"
             BuildableName = "Weather_Report.app"
             BlueprintName = "Weather_Report"
             ReferencedContainer = "container:Weather_Report.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "72CD7E9B1C31E7C30075C63C"
+            BlueprintIdentifier = "72AECA8F1C35ADD400FA5186"
             BuildableName = "Weather_Report.app"
             BlueprintName = "Weather_Report"
             ReferencedContainer = "container:Weather_Report.xcodeproj">

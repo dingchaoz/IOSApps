@@ -2,7 +2,7 @@
 //  Weather_ReportUITests.swift
 //  Weather_ReportUITests
 //
-//  Created by Dingchao Zhang on 12/28/15.
+//  Created by Dingchao Zhang on 12/31/15.
 //  Copyright © 2015 Dingchao Zhang. All rights reserved.
 //
 
