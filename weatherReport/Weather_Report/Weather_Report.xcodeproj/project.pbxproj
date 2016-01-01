@@ -14,6 +14,7 @@
 		72AECA9E1C35ADD400FA5186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72AECA9C1C35ADD400FA5186 /* LaunchScreen.storyboard */; };
 		72AECAA91C35ADD400FA5186 /* Weather_ReportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AECAA81C35ADD400FA5186 /* Weather_ReportTests.swift */; };
 		72AECAB41C35ADD400FA5186 /* Weather_ReportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AECAB31C35ADD400FA5186 /* Weather_ReportUITests.swift */; };
+		72ECA90A1C3738A000A1F94F /* rainy-weather-hd-wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72ECA9091C3738A000A1F94F /* rainy-weather-hd-wallpaper.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		72AECAAF1C35ADD400FA5186 /* Weather_ReportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Weather_ReportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72AECAB31C35ADD400FA5186 /* Weather_ReportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_ReportUITests.swift; sourceTree = "<group>"; };
 		72AECAB51C35ADD400FA5186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72ECA9091C3738A000A1F94F /* rainy-weather-hd-wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "rainy-weather-hd-wallpaper.jpg"; path = "../../../../../Downloads/rainy-weather-hd-wallpaper.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				72AECA971C35ADD400FA5186 /* Main.storyboard */,
 				72AECA9A1C35ADD400FA5186 /* Assets.xcassets */,
 				72AECA9C1C35ADD400FA5186 /* LaunchScreen.storyboard */,
+				72ECA9091C3738A000A1F94F /* rainy-weather-hd-wallpaper.jpg */,
 				72AECA9F1C35ADD400FA5186 /* Info.plist */,
 			);
 			path = Weather_Report;
@@ -232,6 +235,7 @@
 				72AECA9E1C35ADD400FA5186 /* LaunchScreen.storyboard in Resources */,
 				72AECA9B1C35ADD400FA5186 /* Assets.xcassets in Resources */,
 				72AECA991C35ADD400FA5186 /* Main.storyboard in Resources */,
+				72ECA90A1C3738A000A1F94F /* rainy-weather-hd-wallpaper.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +486,7 @@
 				72AECABA1C35ADD400FA5186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72AECABB1C35ADD400FA5186 /* Build configuration list for PBXNativeTarget "Weather_ReportTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				72AECABD1C35ADD400FA5186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72AECABE1C35ADD400FA5186 /* Build configuration list for PBXNativeTarget "Weather_ReportUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				72AECAC01C35ADD400FA5186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

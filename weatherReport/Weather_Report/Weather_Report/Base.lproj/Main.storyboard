@@ -63,10 +63,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rainy-weather-hd-wallpaper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qhx-9D-uKl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="qhx-9D-uKl" secondAttribute="trailing" constant="-20" id="03D-vZ-Zv5"/>
                             <constraint firstItem="vw6-di-ysR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="23r-JM-WDL"/>
+                            <constraint firstItem="qhx-9D-uKl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="2dF-27-VCD"/>
                             <constraint firstItem="fEX-bK-hl9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5NA-0I-wH7"/>
                             <constraint firstItem="hEF-ln-1a7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CbP-Ka-Upw"/>
                             <constraint firstItem="ZKO-6O-qqH" firstAttribute="top" secondItem="vw6-di-ysR" secondAttribute="bottom" constant="1" id="F8S-3k-S8a"/>
@@ -75,7 +80,9 @@
                             <constraint firstItem="vw6-di-ysR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Q99-TV-soc"/>
                             <constraint firstItem="ZKO-6O-qqH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SGG-3Y-dbr"/>
                             <constraint firstItem="fEX-bK-hl9" firstAttribute="top" secondItem="vw6-di-ysR" secondAttribute="bottom" constant="32" id="Tj8-Cj-Yai"/>
+                            <constraint firstItem="qhx-9D-uKl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="bGd-Xd-W80"/>
                             <constraint firstItem="vw6-di-ysR" firstAttribute="top" secondItem="hEF-ln-1a7" secondAttribute="bottom" constant="24" id="fCp-iV-XsI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qhx-9D-uKl" secondAttribute="bottom" id="fqT-0J-ECv"/>
                             <constraint firstItem="hEF-ln-1a7" firstAttribute="top" secondItem="drs-IY-VTu" secondAttribute="bottom" constant="15" id="izB-h9-yEH"/>
                             <constraint firstItem="fEX-bK-hl9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nES-Rj-K4y"/>
                             <constraint firstItem="fEX-bK-hl9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qWJ-8V-q3o"/>
@@ -93,4 +100,7 @@
             <point key="canvasLocation" x="305" y="349"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rainy-weather-hd-wallpaper.jpg" width="2560" height="1600"/>
+    </resources>
 </document>
