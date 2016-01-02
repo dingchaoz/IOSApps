@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rainy-weather-hd-wallpaper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qhx-9D-uKl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEF-ln-1a7">
                                 <rect key="frame" x="101" y="91" width="118" height="21"/>
                                 <constraints>
@@ -56,6 +59,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What's the Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drs-IY-VTu">
                                 <rect key="frame" x="62" y="55" width="197" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="9PU-K8-HmS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="197" id="WnN-cS-wpE"/>
                                     <constraint firstAttribute="width" constant="152" id="bIH-Wm-RyW"/>
                                     <constraint firstAttribute="height" constant="21" id="nyj-tK-xg1"/>
                                 </constraints>
@@ -63,9 +68,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rainy-weather-hd-wallpaper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qhx-9D-uKl">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -85,7 +87,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qhx-9D-uKl" secondAttribute="bottom" id="fqT-0J-ECv"/>
                             <constraint firstItem="hEF-ln-1a7" firstAttribute="top" secondItem="drs-IY-VTu" secondAttribute="bottom" constant="15" id="izB-h9-yEH"/>
                             <constraint firstItem="fEX-bK-hl9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nES-Rj-K4y"/>
+                            <constraint firstItem="drs-IY-VTu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oLP-tX-2uz"/>
                             <constraint firstItem="fEX-bK-hl9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qWJ-8V-q3o"/>
+                            <constraint firstItem="drs-IY-VTu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="vUC-A8-4aU"/>
                             <constraint firstItem="drs-IY-VTu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="z2S-Ss-gH9"/>
                         </constraints>
                     </view>

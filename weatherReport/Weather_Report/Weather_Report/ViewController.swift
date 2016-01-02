@@ -36,13 +36,18 @@ class ViewController: UIViewController {
                     
                     let urlContentArray = urlContent.componentsSeparatedByString("<span class=\"phrase\">")
                     
-                    if urlContentArray.count > 0 {
+                    if urlContentArray.count > 1 {
                         
                         let weatherArray = urlContentArray[1].componentsSeparatedByString("</span>")
                         
                         weather = weatherArray[0] as String
                         
                         weather = weather.stringByReplacingOccurrencesOfString("&deg;", withString: "o")
+                    }
+                    
+                    else {
+                        
+                        urlError = true
                     }
                     
                     //print(urlContent)
@@ -82,7 +87,7 @@ class ViewController: UIViewController {
     
     func showError() {
        
-        result.text = "Was not able to find weather for" + userCity.text! + "please try again"
+        result.text = "Was not able to find weather for " + userCity.text! + "please try again"
         
     }
     
