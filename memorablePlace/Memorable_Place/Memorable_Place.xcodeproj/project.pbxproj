@@ -14,6 +14,8 @@
 		729AE85B1C38B1F000657FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729AE8591C38B1F000657FE3 /* LaunchScreen.storyboard */; };
 		729AE8661C38B1F000657FE3 /* Memorable_PlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729AE8651C38B1F000657FE3 /* Memorable_PlaceTests.swift */; };
 		729AE8711C38B1F000657FE3 /* Memorable_PlaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729AE8701C38B1F000657FE3 /* Memorable_PlaceUITests.swift */; };
+		729FE71F1C3971EA001C939C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729FE71E1C3971EA001C939C /* TableViewController.swift */; };
+		729FE7211C397BA6001C939C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729FE7201C397BA6001C939C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		729AE86C1C38B1F000657FE3 /* Memorable_PlaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Memorable_PlaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		729AE8701C38B1F000657FE3 /* Memorable_PlaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memorable_PlaceUITests.swift; sourceTree = "<group>"; };
 		729AE8721C38B1F000657FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		729FE71E1C3971EA001C939C /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		729FE7201C397BA6001C939C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729FE7211C397BA6001C939C /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 		729AE8441C38B1F000657FE3 = {
 			isa = PBXGroup;
 			children = (
+				729FE7201C397BA6001C939C /* CoreLocation.framework */,
 				729AE84F1C38B1F000657FE3 /* Memorable_Place */,
 				729AE8641C38B1F000657FE3 /* Memorable_PlaceTests */,
 				729AE86F1C38B1F000657FE3 /* Memorable_PlaceUITests */,
@@ -99,6 +105,7 @@
 			children = (
 				729AE8501C38B1F000657FE3 /* AppDelegate.swift */,
 				729AE8521C38B1F000657FE3 /* ViewController.swift */,
+				729FE71E1C3971EA001C939C /* TableViewController.swift */,
 				729AE8541C38B1F000657FE3 /* Main.storyboard */,
 				729AE8571C38B1F000657FE3 /* Assets.xcassets */,
 				729AE8591C38B1F000657FE3 /* LaunchScreen.storyboard */,
@@ -257,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				729AE8531C38B1F000657FE3 /* ViewController.swift in Sources */,
+				729FE71F1C3971EA001C939C /* TableViewController.swift in Sources */,
 				729AE8511C38B1F000657FE3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +490,7 @@
 				729AE8771C38B1F000657FE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		729AE8781C38B1F000657FE3 /* Build configuration list for PBXNativeTarget "Memorable_PlaceTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				729AE87A1C38B1F000657FE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		729AE87B1C38B1F000657FE3 /* Build configuration list for PBXNativeTarget "Memorable_PlaceUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				729AE87D1C38B1F000657FE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
