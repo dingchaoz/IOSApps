@@ -26,6 +26,8 @@ class ViewController: UIViewController {
             var weather = ""
             
             // Initiate a task to return data, response and error
+            
+            
             let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: {
                 (data,response,error) -> Void in
                 
@@ -35,6 +37,8 @@ class ViewController: UIViewController {
                     let urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding) as NSString!
                     
                     let urlContentArray = urlContent.componentsSeparatedByString("<span class=\"phrase\">")
+                    
+                    //print(urlContentArray.count)
                     
                     if urlContentArray.count > 1 {
                         
