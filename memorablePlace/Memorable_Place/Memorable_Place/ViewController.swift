@@ -8,8 +8,9 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate{
     
     var manager: CLLocationManager!
     
@@ -44,36 +45,42 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             let location = CLLocation(latitude:newCoordinate.latitude, longitude:newCoordinate.longitude)
             
             CLGeocoder().reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
+                
+                var title = ""
+                
                 if (error == nil) {
                     
-                    if let p = CLPlacemark(placemark: placemarks?[0] as CLPlacemark!) {
+                    if let p = placemarks?.first {
                         
                         let subThoroughfare:String = ""
                         
-                        let thoroughfare:String = ""
+                        var thoroughfare:String = ""
                         
-                        if p.subThoroughfare != nil {
+                        if p.thoroughfare != nil {
                             
-                            subThoroughfare = p.subThoroughfare
+                            thoroughfare = p.thoroughfare!
                         }
                         
-                        let title = "\(subThoroughfare)\(thoroughfare)"
+                        title = "\(subThoroughfare)\(thoroughfare)"
                     }
                 }
+                
+                if title == "" {
+                    
+                    title = "Added\(NSDate())"
+                }
+                
+                let annotation = MKPointAnnotation()
+                
+                annotation.coordinate = newCoordinate
+                
+                annotation.title = title
+                
+                self.map.addAnnotation(annotation)
+                
             })
             
-            if title == "" {
-                
-                title = "Added\(NSDate())"
-            }
             
-            let annotation = MKPointAnnotation()
-            
-            annotation.coordinate = newCoordinate
-            
-            annotation.title = title
-            
-            self.map.addAnnotation(annotation)
         }
         
         //UIGestureRecognizer.locationInView(self.map)
