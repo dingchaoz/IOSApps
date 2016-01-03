@@ -8,10 +8,21 @@
 
 import UIKit
 
+var places = [Dictionary<String,String>()]
+
+var activePlace = -1
+
 class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if places.count == 1 {
+            
+            places.removeAtIndex(0)
+            
+            places.append(["name":"Taj Mahal","lat":"27.175277","lon":"78.042128"])
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,17 +35,28 @@ class TableViewController: UITableViewController {
     
     override func tableView(tableview: UITableView, numberOfRowsInSection section: Int) -> Int{
         
-        return 3
+        return places.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = "test"
+        cell.textLabel?.text = places[indexPath.row]["name"]
+        
+        print(places.count)
         
         return cell
         
+       
         
+    }
+    
+    
+    override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+        
+        activePlace = indexPath.row
+        
+        return indexPath
     }
 
 }

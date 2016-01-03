@@ -21,11 +21,41 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        if activePlace == -1 {
+            
+            manager.requestWhenInUseAuthorization()
+            manager.startUpdatingLocation()
+            
+        } else {
+            
+            let latitude = NSString(string: places[activePlace]["lat"]!).doubleValue
+            
+            let longitude = NSString(string: places[activePlace]["lon"]!).doubleValue
+            
+            let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
+            
+            let latDelta:CLLocationDegrees = 0.01
+            
+            let lonDelta:CLLocationDegrees = 0.01
+            
+            let span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+            
+            let region:MKCoordinateRegion = MKCoordinateRegionMake(coordinate, span)
+            
+            let annotation = MKPointAnnotation()
+            
+            annotation.coordinate = coordinate
+            
+            annotation.title = places[activePlace]["name"]
+            
+            self.map.setRegion(region, animated: true)
+            
+        }
+        
         manager = CLLocationManager()
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
-        manager.requestWhenInUseAuthorization()
-        manager.startUpdatingLocation()
+      
         
         let uilpgr = UILongPressGestureRecognizer(target: self, action: "action:")
         
@@ -70,6 +100,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                     title = "Added\(NSDate())"
                 }
                 
+                places.append(["name":title,"lat":"\(newCoordinate.latitude)","lon":"\(newCoordinate.longitude)"])
+                
+                print(places)
+                
+                print(places.count)
+                
                 let annotation = MKPointAnnotation()
                 
                 annotation.coordinate = newCoordinate
@@ -83,7 +119,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             
         }
         
-        //UIGestureRecognizer.locationInView(self.map)
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -91,11 +126,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         let userLocation:CLLocation = locations[0]
         
-        let lalitude = userLocation.coordinate.latitude
+        let latitude = userLocation.coordinate.latitude
         
-        let longtitude = userLocation.coordinate.longitude
+        let longitude = userLocation.coordinate.longitude
         
-        let coordinate = CLLocationCoordinate2DMake(lalitude, longtitude)
+        let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
         
         let latDelta:CLLocationDegrees = 0.01
         
