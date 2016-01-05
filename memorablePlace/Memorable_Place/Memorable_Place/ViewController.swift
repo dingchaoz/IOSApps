@@ -52,6 +52,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             
         }
         
+        //manager.requestWhenInUseAuthorization()
+        //manager.startUpdatingLocation()
         manager = CLLocationManager()
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest

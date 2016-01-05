@@ -22,6 +22,8 @@ class TableViewController: UITableViewController {
             places.removeAtIndex(0)
             
             places.append(["name":"Taj Mahal","lat":"27.175277","lon":"78.042128"])
+            
+            places.append(["name":"Test example","lat":"37.175277","lon":"98.042128"])
         }
     }
     
@@ -57,6 +59,14 @@ class TableViewController: UITableViewController {
         activePlace = indexPath.row
         
         return indexPath
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "newPlace" {
+            
+            activePlace = -1
+        }
     }
 
 }

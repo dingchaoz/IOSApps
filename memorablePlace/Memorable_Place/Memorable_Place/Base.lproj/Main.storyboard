@@ -69,7 +69,7 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="Qa4-Vd-jtM">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="QfO-Li-IO7">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="8Bo-ox-F0r"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="newPlace" id="8Bo-ox-F0r"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -98,6 +98,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LBH-hh-kco"/>
+        <segue reference="8Bo-ox-F0r"/>
     </inferredMetricsTieBreakers>
 </document>
