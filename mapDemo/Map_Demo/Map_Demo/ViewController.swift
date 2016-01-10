@@ -25,32 +25,32 @@ class ViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDeleg
         locationManager.startUpdatingLocation()
         
         
-        let latitude: CLLocationDegrees = 39.165
-        
-        let longitude: CLLocationDegrees = -85.95
-        
-        let latDelta:CLLocationDegrees = 0.01
-        
-        let lonDelta:CLLocationDegrees = 0.01
-        
-        let span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
-        
-        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-        
-        let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
-        
-        map.setRegion(region, animated: true)
-        
-        
-        let annotation = MKPointAnnotation()
-        
-        annotation.coordinate = location
-        
-        annotation.title = "My Home"
-        
-        annotation.subtitle = "haha"
-        
-        map.addAnnotation(annotation)
+//        let latitude: CLLocationDegrees = 39.165
+//        
+//        let longitude: CLLocationDegrees = -85.95
+//
+//        let latDelta:CLLocationDegrees = 0.01
+//        
+//        let lonDelta:CLLocationDegrees = 0.01
+//        
+//        let span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+//        
+//        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+//        
+//        let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+//        
+//        map.setRegion(region, animated: true)
+//        
+//        
+//        let annotation = MKPointAnnotation()
+//        
+//        annotation.coordinate = location
+//        
+//        annotation.title = "My Home"
+//        
+//        annotation.subtitle = "haha"
+//        
+//        map.addAnnotation(annotation)
         
         
         let uilpgr = UILongPressGestureRecognizer(target: self, action: "action:")
