@@ -15,11 +15,15 @@ import TwitterKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+ 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        Fabric.with([Twitter.self])
+        //Fabric.with([Twitter.self])
+        
+        Twitter.sharedInstance().startWithConsumerKey("cTabxzSntfO0s5DHbeTInSVP3", consumerSecret: "KwkJEJDCSv9MuCraIj3CxfkaoYoRkmMd78PhCDKOFw5SxLLVGO")
+        Fabric.with([Twitter.sharedInstance()])
 
         return true
     }

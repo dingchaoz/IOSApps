@@ -35,29 +35,39 @@ class ViewController: UIViewController {
         logInButton.center = self.view.center
         self.view.addSubview(logInButton)
 
-        
-        
-        
-        let urlPath = "https://api.twitter.com/1.1/statuses/show.json?id=210462857140252672"
-        
-        //
-        let url = NSURL(string: urlPath)
-        
-        // create a session to run a task within it
-        let session = NSURLSession.sharedSession()
-        
-        // this part of task construction syntax is slightly different than the tutorial's
-        let task = session.dataTaskWithURL(url!) { (data, response, error) -> Void in
-            
-            if (error != nil) {
-                
-                print(error)
+        // TODO: Base this Tweet ID on some data from elsewhere in your app
+        TWTRAPIClient().loadTweetWithID("631879971628183552") { (tweet, error) in
+            if let unwrappedTweet = tweet {
+                let tweetView = TWTRTweetView(tweet: unwrappedTweet)
+                tweetView.center = CGPointMake(self.view.center.x, self.topLayoutGuide.length + tweetView.frame.size.height / 2);
+                self.view.addSubview(tweetView)
             } else {
-                
-                let urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding)
-                
-                print(urlContent)
-                
+                NSLog("Tweet load error: %@", error!.localizedDescription);
+            }
+        }
+
+        
+        
+//        let urlPath = "https://api.twitter.com/1.1/statuses/show.json?id=210462857140252672"
+//        
+//        //
+//        let url = NSURL(string: urlPath)
+//        
+//        // create a session to run a task within it
+//        let session = NSURLSession.sharedSession()
+//        
+//        // this part of task construction syntax is slightly different than the tutorial's
+//        let task = session.dataTaskWithURL(url!) { (data, response, error) -> Void in
+//            
+//            if (error != nil) {
+//                
+//                print(error)
+//            } else {
+//                
+//                let urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding)
+//                
+//                print(urlContent)
+//                
                 // display the web view use content using request -- method1
                 
 //                self.webView.loadRequest(NSURLRequest(URL: url!))
@@ -71,26 +81,26 @@ class ViewController: UIViewController {
                 
                 
                 
-                // Try to get the jason serialized data of the web if possible, thus we have to use do {try} catch{}
-                do {
-                    
-                     let jsonResult = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers)
-                    
-                    
-                    print(jsonResult)
-                    
-                } catch {
-                    
-                    print("JSON serialization failed")
-                }
-                
-               
-                
-            }
-        }
-        
-        // run the task
-        task.resume()
+//                // Try to get the jason serialized data of the web if possible, thus we have to use do {try} catch{}
+//                do {
+//                    
+//                     let jsonResult = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers)
+//                    
+//                    
+//                    print(jsonResult)
+//                    
+//                } catch {
+//                    
+//                    print("JSON serialization failed")
+//                }
+//                
+//               
+//                
+//            }
+//        }
+//        
+//        // run the task
+//        task.resume()
     }
 
     override func didReceiveMemoryWarning() {
